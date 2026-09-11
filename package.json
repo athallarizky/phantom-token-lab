@@ -1,0 +1,23 @@
+{
+  "name": "phantom-token-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Concept lab: Phantom Token Pattern — opaque API key at the edge, short-lived EdDSA JWT inside a zero-trust mesh (AI Gateway theme, Track A).",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start:gateway": "tsx apps/gateway/server.ts",
+    "start:prompt": "tsx apps/prompt-service/server.ts",
+    "start:quota": "tsx apps/quota-service/server.ts",
+    "start:all": "tsx scripts/start-all.ts",
+    "test:smoke": "tsx experiments/00-smoke-test.ts",
+    "test:experiments": "bash experiments/01-happy-path.sh && bash experiments/02-revocation.sh && bash experiments/03-anti-spoofing.sh",
+    "test:benchmark": "tsx experiments/04-benchmark.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

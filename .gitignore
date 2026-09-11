@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build & runtime artifacts
+dist/
+build/
+.cache/
+*.log
+
+# Environment & Secret files
+.env
+.env.local
+.env.*.local
+!.env.example
+keys/*.private.pem
+*.pem
+
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Agent-generated directories (Per-project agent workspaces)
+.commandcode/
+.claude/
+.cursor/
+.codex/
+.copilot/
+.windsurf/
+.augment/
+.continue/
+.aider/
+.gemini/
+.opencode/
+
+# Planning & learning docs — private, synced to engineering-handbook
+/docs
+/docs/

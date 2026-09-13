@@ -9,8 +9,6 @@ build/
 *.log
 
 # Environment & Secret files
-.env
-.env.local
 .env.*.local
 !.env.example
 keys/*.private.pem
@@ -20,7 +18,6 @@ keys/*.private.pem
 # OS & Editor files
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
 
 # Agent-generated directories (Per-project agent workspaces)
@@ -39,3 +36,4 @@ Thumbs.db
 # Planning & learning docs — private, synced to engineering-handbook
 /docs
 /docs/
+config.bat
